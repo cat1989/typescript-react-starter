@@ -29,7 +29,14 @@ const config = {
                 use: [
                     isProdution ? miniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',
-                    'postcss-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: [
+                                require('autoprefixer')
+                            ]
+                        }
+                    },
                     'sass-loader',
                     {
                         loader: 'sass-resources-loader',
