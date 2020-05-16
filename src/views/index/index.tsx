@@ -6,6 +6,7 @@ export interface Props {
 }
 
 export const index = ({ greeting='typescript-react-starter' }: Props) => {
+//export const index = (props: { greeting: string }) => {
     return (
         <div className="view">
             <h1>

@@ -18,10 +18,6 @@
   },
   "homepage": "https://github.com/cat1989/typescript-react-starter#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/plugin-transform-runtime": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "@babel/preset-react": "^7.9.4",
     "@types/axios": "^0.14.0",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
@@ -30,7 +26,6 @@
     "@typescript-eslint/parser": "^2.33.0",
     "autoprefixer": "^9.7.6",
     "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",

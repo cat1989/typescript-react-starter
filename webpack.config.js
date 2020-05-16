@@ -64,22 +64,14 @@ const config = {
                 ]
             },
             {
-                test: /\.js$/,
-                use: isProdution ? [
-                    'babel-loader',
-                    'eslint-loader'
-                ] : [
-                    'babel-loader',
-                    'eslint-loader',
-                    'source-map-loader'
-                ],
-                exclude: /node_modules/
-            },
-            {
                 test: /\.tsx$/,
-                use: [
+                use: isProdution ? [
                     'awesome-typescript-loader',
                     'eslint-loader'
+                ] : [
+                    'awesome-typescript-loader',
+                    'eslint-loader',
+                    'source-map-loader'
                 ]
             }
         ]
@@ -100,7 +92,7 @@ if (isProdution) {
     config.mode = 'production'
     config.output.filename = 'scripts/[contenthash:8].js'
     config.output.chunkFilename = 'scripts/[contenthash:8].js'
-    config.output.publicPath = 'http://localhost'
+    // config.output.publicPath = 'http://localhost'
     config.optimization = {
         splitChunks: {
             cacheGroups: {
