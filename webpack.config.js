@@ -102,7 +102,7 @@ if (isProdution) {
     config.output.chunkFilename = 'scripts/[contenthash:8].js'
     config.output.publicPath = 'http://localhost'
     config.optimization = {
-        splitchunks: {
+        splitChunks: {
             cacheGroups: {
                 commons: {
                     test: /[\\/]node_modules[\\/]/,
